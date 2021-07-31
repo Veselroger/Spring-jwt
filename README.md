@@ -802,6 +802,7 @@ public PasswordEncoder passwordEncoder() {
         public boolean matches(CharSequence charSequence, String s) { return s.equals(charSequence.toString()); }
     };
 }
+```
 
 Теперь нужно создать код для входа в систему. Создадим специальный пакет "requests" для DTO пользовательского ввода. И создадим там DTO для ввода пользователя логина и пароля:
 ```java
